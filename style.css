@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#carousel-stage{
+display: flex;
+flex-direction: row;
+}
+
+.carousel-container {
+  height: 100vh;
+  width: 33.33vw;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+  background-color: black;
+}
+
+.item {
+  height: 800px;
+  width: 650px;
+  object-fit: cover;
+}
+
+/* Keyframes to animate scrolling */
+/* -itemHeight * itemCount */
+/* @keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-600px);
+
+  }
+} */
+
+/* .carousel {
+    animation: scroll 8s linear infinite;
+  } */
