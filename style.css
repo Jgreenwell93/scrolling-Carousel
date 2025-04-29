@@ -8,6 +8,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /*styles for fade-in effect*/
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* onload will change opacity to 1*/
+#carousel-stage.fade-in {
+  opacity: 1;
 }
 
 .carousel-container {

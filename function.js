@@ -26,6 +26,21 @@ function loop() {
 
 loop();
 
+//added function for fade in effect
+//es5
+// window.addEventListener('load', function () {
+//   const stage = document.getElementById('carousel-stage');
+//   if (stage) {
+//     stage.classList.add('fade-in');
+//   }
+// });
+
+//es6
+window.addEventListener('load', () => {
+  document.getElementById('carousel-stage')?.classList.add('fade-in');
+});
+
+
 
 
 // const carousel1 = document.getElementById("carousel-1");

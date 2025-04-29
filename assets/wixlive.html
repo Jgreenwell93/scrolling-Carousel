@@ -70,6 +70,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        /*styles for fade-in effect*/
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* onload will change opacity to 1*/
+    #carousel-stage.fade-in {
+        opacity: 1;
     }
 
     .carousel-container {
@@ -124,5 +132,20 @@
     }
 
     loop();
+
+    //added function for fade in effect
+    //es5
+    window.addEventListener('load', function () {
+        const stage = document.getElementById('carousel-stage');
+        if (stage) {
+            stage.classList.add('fade-in');
+        }
+    });
+
+    //es6
+    // window.addEventListener('load', () => {
+    //     document.getElementById('carousel-stage')?.classList.add('fade-in');
+    // });
+
 
 </script>
