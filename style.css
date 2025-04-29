@@ -4,10 +4,10 @@ body {
   background-color: black;
 }
 
-#carousel-stage{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+#carousel-stage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .carousel-container {
@@ -26,8 +26,9 @@ justify-content: space-around;
 }
 
 .item {
-  height: 800px;
-  width: 650px;
+  width: 34.5vw;
+  aspect-ratio: 650 / 800;
+  /* Maintain image proportion */
   object-fit: cover;
   padding-top: 0.83vw;
 }
