@@ -1,7 +1,7 @@
 const carouselConfigs = [
-  { id: "carousel-1", speed: 1, scrollY: 0 },
-  { id: "carousel-2", speed: 2, scrollY: 0 },
-  { id: "carousel-3", speed: 0.5, scrollY: 0 },
+  { id: "carousel-1", speed: 1.6, scrollY: 0 },
+  { id: "carousel-2", speed: 1.9, scrollY: 0 },
+  { id: "carousel-3", speed: 1.3, scrollY: 0 },
 ];
 
 const carousels = carouselConfigs.map(config => {
