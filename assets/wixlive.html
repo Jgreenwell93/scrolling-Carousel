@@ -57,8 +57,6 @@
     </div>
 </div>
 
-<script src="function.js"></script>
-
 <style>
     body {
         margin: 0;
@@ -71,14 +69,13 @@
         flex-direction: row;
         justify-content: space-around;
         /*styles for fade-in effect*/
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
+        /*opacity: 0;*/
     }
 
     /* onload will change opacity to 1*/
-    #carousel-stage.fade-in {
+    /*#carousel-stage.fade-in {
         opacity: 1;
-    }
+    }*/
 
     .carousel-container {
         height: 100vh;
@@ -134,12 +131,12 @@
 
     //added function for fade in effect
     //es5
-    window.addEventListener('load', function () {
-        const stage = document.getElementById('carousel-stage');
-        if (stage) {
-            stage.classList.add('fade-in');
-        }
-    });
+    // window.addEventListener('load', function () {
+    //     const stage = document.getElementById('carousel-stage');
+    //     if (stage) {
+    //         stage.classList.add('fade-in');
+    //     }
+    // });
 
     //es6
     // window.addEventListener('load', () => {
